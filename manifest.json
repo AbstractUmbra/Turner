@@ -1,0 +1,78 @@
+{
+    "manifest_version": 3,
+    "name": "Kindle Scroller",
+    "description": "does something that should already exist.",
+    "version": "0.1.0",
+    "author": "AbstractUmbra",
+    "homepage_url": "https://github.com/AbstractUmbra/Turner",
+    "icons": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "kindle.js"
+            ],
+            "matches": [
+                "https://read.amazon.com.au/",
+                "https://read.amazon.com.be/",
+                "https://read.amazon.com.br/",
+                "https://read.amazon.ca/",
+                "https://read.amazon.cn/",
+                "https://read.amazon.eg/",
+                "https://read.amazon.fr/",
+                "https://read.amazon.de/",
+                "https://read.amazon.in/",
+                "https://read.amazon.it/",
+                "https://read.amazon.co.jp/",
+                "https://read.amazon.com.mx/",
+                "https://read.amazon.nl/",
+                "https://read.amazon.pl/",
+                "https://read.amazon.sa/",
+                "https://read.amazon.sg/",
+                "https://read.amazon.es/",
+                "https://read.amazon.se/",
+                "https://read.amazon.com.tr/",
+                "https://read.amazon.ae/",
+                "https://read.amazon.co.uk/"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://read.amazon.com.au/",
+        "https://read.amazon.com.be/",
+        "https://read.amazon.com.br/",
+        "https://read.amazon.ca/",
+        "https://read.amazon.cn/",
+        "https://read.amazon.eg/",
+        "https://read.amazon.fr/",
+        "https://read.amazon.de/",
+        "https://read.amazon.in/",
+        "https://read.amazon.it/",
+        "https://read.amazon.co.jp/",
+        "https://read.amazon.com.mx/",
+        "https://read.amazon.nl/",
+        "https://read.amazon.pl/",
+        "https://read.amazon.sa/",
+        "https://read.amazon.sg/",
+        "https://read.amazon.es/",
+        "https://read.amazon.se/",
+        "https://read.amazon.com.tr/",
+        "https://read.amazon.ae/",
+        "https://read.amazon.co.uk/"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    }
+}
